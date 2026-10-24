@@ -9,11 +9,11 @@ function Education() {
       title: "B.E Information Science & Engineering",
       institute: "M.S. Ramaiah Institute of Technology",
       location: "Bangalore, Karnataka",
-      score: "CGPA: 8.76",
+      score: "CGPA: 8.83",
       status: "Current",
       logo: ramaiahLogo,
       description:
-        "Currently pursuing B.E in Information Science & Engineering at M.S. Ramaiah Institute of Technology with a CGPA of 8.76. Actively building expertise in Full Stack Development, Artificial Intelligence, Machine Learning, and Software Engineering.",
+        "Currently pursuing B.E in Information Science & Engineering at M.S. Ramaiah Institute of Technology with a CGPA of 8.83. Actively building expertise in Full Stack Development, Artificial Intelligence, Machine Learning, and Software Engineering.",
     },
     {
       year: "2021 - 2023",

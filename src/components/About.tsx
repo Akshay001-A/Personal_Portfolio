@@ -41,7 +41,7 @@ function About() {
 
             <div className="text-center">
               <h3 className="text-cyan-400 text-3xl font-bold">
-                8.76
+                8.83
               </h3>
               <p className="text-gray-400">
                 CGPA

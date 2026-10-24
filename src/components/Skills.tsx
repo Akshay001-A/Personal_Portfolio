@@ -12,7 +12,6 @@ import {
 import {
   SiJavascript,
   SiC,
-  SiCplusplus,
   SiExpress,
   SiFlask,
   SiMongodb,
@@ -31,7 +30,6 @@ function Skills() {
         { name: "Python", icon: <FaPython /> },
         { name: "JavaScript", icon: <SiJavascript /> },
         { name: "C", icon: <SiC /> },
-        { name: "C++", icon: <SiCplusplus /> },
       ],
     },
 
@@ -80,7 +78,6 @@ function Skills() {
         { name: "Git", icon: <FaGitAlt /> },
         { name: "Docker", icon: <FaDocker /> },
         { name: "GitHub", icon: <FaGithub /> },
-        { name: "VS Code" },
       ],
     },
   ];

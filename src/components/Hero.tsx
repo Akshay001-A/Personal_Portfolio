@@ -93,7 +93,7 @@ function Hero() {
           <div className="mt-8 flex flex-wrap gap-4">
 
             <a
-              href="https://drive.google.com/file/d/1JPzBoogW2b3pSLgZJu5kqOg1eppzNwdd/view?usp=sharing"
+              href="https://drive.google.com/file/d/1zp3lmgaqtjXMfJfKMcAQzthPlhtaijbr/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-cyan-600 transition px-7 py-3 rounded-xl flex items-center gap-2 font-medium"
@@ -139,7 +139,7 @@ function Hero() {
 
             <div>
               <h3 className="text-3xl font-bold text-cyan-400">
-                8.76
+                8.83
               </h3>
               <p className="text-gray-400">
                 CGPA
@@ -183,7 +183,6 @@ function Hero() {
                 "Express.js",
                 "MongoDB",
                 "MySQL",
-                "TensorFlow",
                 "Docker",
                 "Git",
               ].map((tech) => (
