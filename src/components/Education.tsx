@@ -6,14 +6,14 @@ function Education() {
   const education = [
     {
       year: "2023 - 2027",
-      title: "B.E Information Science & Engineering",
+      title: "B.E. Information Science & Engineering",
       institute: "M.S. Ramaiah Institute of Technology",
       location: "Bangalore, Karnataka",
       score: "CGPA: 8.83",
       status: "Current",
       logo: ramaiahLogo,
       description:
-        "Currently pursuing B.E in Information Science & Engineering at M.S. Ramaiah Institute of Technology with a CGPA of 8.83. Actively building expertise in Full Stack Development, Artificial Intelligence, Machine Learning, and Software Engineering.",
+        "Currently pursuing B.E. in Information Science & Engineering at M.S. Ramaiah Institute of Technology with a CGPA of 8.83. Actively building expertise in Full Stack Development, Artificial Intelligence, Machine Learning, and Software Engineering.",
     },
     {
       year: "2021 - 2023",
@@ -31,113 +31,109 @@ function Education() {
   return (
     <section
       id="education"
-      className="min-h-screen px-6 pt-16 pb-12"
+      className="relative scroll-mt-20 px-4 pt-8 pb-12 sm:px-6 sm:pt-12 sm:pb-16 md:px-12 md:pt-16 md:pb-20"
     >
-      {/* Heading */}
-      <div className="text-center mb-10">
-        <h2 className="text-5xl font-bold">
-          Education
-        </h2>
+      <div className="mx-auto w-full max-w-5xl">
 
-        <p className="text-gray-400 mt-2">
-          My academic journey and achievements
-        </p>
-      </div>
+        {/* Section Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.5 }}
+          className="mb-7 text-center sm:mb-10"
+        >
+          <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
+              Education
+            </span>
+          </h2>
 
-      {/* Cards */}
-      <div className="max-w-5xl mx-auto space-y-6">
+          <p className="mt-2 text-sm text-gray-400 sm:text-base">
+            My academic journey and achievements
+          </p>
+        </motion.div>
 
-        {education.map((item, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5 }}
-            whileHover={{
-              y: -5,
-              scale: 1.01,
-            }}
-            className="
-              bg-white/5
-              border
-              border-white/10
-              rounded-3xl
-              p-6
-              backdrop-blur-md
-              hover:border-cyan-400
-              hover:shadow-[0_0_25px_rgba(34,211,238,0.15)]
-              transition-all
-              duration-300
-            "
-          >
-            <div className="flex flex-col md:flex-row gap-6">
+        {/* Education Cards */}
+        <div className="space-y-4 sm:space-y-6">
+          {education.map((item, index) => (
+            <motion.article
+              key={item.institute}
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.1 }}
+              transition={{
+                duration: 0.5,
+                delay: index * 0.1,
+              }}
+              whileHover={{ y: -3 }}
+              className="rounded-2xl border border-white/10 bg-white/[0.04] p-4 transition-colors duration-300 hover:border-cyan-400/60 hover:shadow-[0_0_25px_rgba(34,211,238,0.10)] sm:rounded-3xl sm:p-6 md:p-7"
+            >
+              <div className="flex min-w-0 flex-col gap-4 sm:gap-5 md:flex-row md:items-start md:gap-6">
 
-              {/* Logo */}
-              <div className="flex justify-center md:justify-start">
-                <img
-                  src={item.logo}
-                  alt={item.institute}
-                  className="
-                    w-24
-                    h-24
-                    object-contain
-                    bg-white
-                    rounded-xl
-                    p-2
-                  "
-                />
-              </div>
-
-              {/* Content */}
-              <div className="flex-1">
-
-                <div className="flex items-center gap-3 flex-wrap">
-                  <p className="text-cyan-400 font-semibold text-lg">
-                    {item.year}
-                  </p>
-
-                  <span
-                    className={`
-                      px-3 py-1
-                      rounded-full
-                      text-xs
-                      font-medium
-                      ${item.status === "Current"
-                        ? "bg-green-500/20 text-green-400"
-                        : "bg-blue-500/20 text-blue-400"
-                      }
-                    `}
-                  >
-                    {item.status}
-                  </span>
+                {/* Institution Logo */}
+                <div className="flex shrink-0 justify-start md:justify-center">
+                  <div className="flex h-16 w-16 items-center justify-center overflow-hidden rounded-xl bg-white p-2 sm:h-20 sm:w-20 md:h-24 md:w-24">
+                    <img
+                      src={item.logo}
+                      alt={`${item.institute} logo`}
+                      loading="lazy"
+                      className="h-full w-full object-contain"
+                    />
+                  </div>
                 </div>
 
-                <h3 className="text-2xl font-bold mt-2">
-                  {item.title}
-                </h3>
+                {/* Education Details */}
+                <div className="min-w-0 flex-1">
 
-                <p className="text-gray-300 text-lg mt-1">
-                  {item.institute}
-                </p>
+                  {/* Year and Status */}
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-sm font-semibold text-cyan-400 sm:text-base">
+                      {item.year}
+                    </span>
 
-                <p className="text-gray-500 mt-1">
-                  📍 {item.location}
-                </p>
+                    <span
+                      className={`rounded-full px-2.5 py-1 text-xs font-medium ${
+                        item.status === "Current"
+                          ? "bg-green-500/15 text-green-400"
+                          : "bg-blue-500/15 text-blue-400"
+                      }`}
+                    >
+                      {item.status}
+                    </span>
+                  </div>
 
-                <p className="text-cyan-400 font-bold text-xl mt-4">
-                  {item.score}
-                </p>
+                  {/* Degree */}
+                  <h3 className="mt-2 break-words text-lg font-bold leading-snug text-white sm:text-xl md:text-2xl">
+                    {item.title}
+                  </h3>
 
-                <p className="mt-3 text-gray-300 leading-7">
-                  {item.description}
-                </p>
+                  {/* Institute */}
+                  <p className="mt-2 break-words text-sm leading-6 text-gray-300 sm:text-base sm:leading-7">
+                    {item.institute}
+                  </p>
 
+                  {/* Location */}
+                  <p className="mt-1 text-sm text-gray-400">
+                    <span aria-hidden="true">📍 </span>
+                    {item.location}
+                  </p>
+
+                  {/* Score */}
+                  <p className="mt-3 text-lg font-bold text-cyan-400 sm:text-xl">
+                    {item.score}
+                  </p>
+
+                  {/* Description */}
+                  <p className="mt-3 break-words text-sm leading-7 text-gray-300 sm:text-base sm:leading-8">
+                    {item.description}
+                  </p>
+
+                </div>
               </div>
-
-            </div>
-          </motion.div>
-        ))}
+            </motion.article>
+          ))}
+        </div>
 
       </div>
     </section>
