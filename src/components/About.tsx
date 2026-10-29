@@ -68,7 +68,7 @@ function About() {
 
           </div>
 
-          <div className="flex justify-center mt-10">
+          <div className="flex justify-center mt-10 max-md:mt-8">
             <button
               onClick={() => setOpen(true)}
               className="
@@ -82,6 +82,8 @@ function About() {
                 transition-all
                 duration-300
                 font-medium
+                max-md:min-h-12
+                max-md:w-full
               "
             >
               Read More

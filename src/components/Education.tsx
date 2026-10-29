@@ -34,7 +34,7 @@ function Education() {
       className="min-h-screen px-6 pt-16 pb-12 max-md:min-h-0 max-md:px-4 max-md:py-16"
     >
       {/* Heading */}
-      <div className="text-center mb-10">
+      <div className="text-center mb-10 max-md:mb-8">
         <h2 className="text-5xl font-bold max-md:text-3xl">
           Education
         </h2>
@@ -45,7 +45,7 @@ function Education() {
       </div>
 
       {/* Cards */}
-      <div className="max-w-5xl mx-auto space-y-6">
+      <div className="max-w-5xl mx-auto space-y-6 max-md:space-y-4">
 
         {education.map((item, index) => (
           <motion.div
@@ -72,7 +72,7 @@ function Education() {
               duration-300
             "
           >
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex flex-col md:flex-row gap-6 max-md:gap-4">
 
               {/* Logo */}
               <div className="flex justify-center md:justify-start">
@@ -82,6 +82,8 @@ function Education() {
                   className="
                     w-24
                     h-24
+                    max-md:w-20
+                    max-md:h-20
                     object-contain
                     bg-white
                     rounded-xl
@@ -93,7 +95,7 @@ function Education() {
               {/* Content */}
               <div className="flex-1">
 
-                <div className="flex items-center gap-3 flex-wrap">
+                <div className="flex items-center gap-3 flex-wrap max-md:gap-2">
                   <p className="text-cyan-400 font-semibold text-lg">
                     {item.year}
                   </p>
@@ -130,7 +132,7 @@ function Education() {
                   {item.score}
                 </p>
 
-                <p className="mt-3 text-gray-300 leading-7">
+                <p className="mt-3 text-gray-300 leading-7 max-md:text-sm max-md:leading-6">
                   {item.description}
                 </p>
 

@@ -76,7 +76,7 @@ function Contact() {
                 <div className="grid md:grid-cols-2 gap-10 max-md:gap-8">
 
                     {/* Contact Info */}
-                    <div className="space-y-5">
+                    <div className="space-y-5 max-md:space-y-3">
 
                         <a
                             href="mailto:akshay02072005@gmail.com"
@@ -149,7 +149,7 @@ function Contact() {
                     <form
                         ref={form}
                         onSubmit={sendEmail}
-                        className="space-y-5"
+                        className="space-y-5 max-md:space-y-4"
                     >
 
                         <input
@@ -157,7 +157,7 @@ function Contact() {
                             name="from_name"
                             required
                             placeholder="Your Name"
-                            className="w-full p-4 rounded-2xl bg-white/5 border border-white/10 focus:border-cyan-400 outline-none max-md:p-3"
+                            className="w-full min-h-12 p-4 rounded-2xl bg-white/5 border border-white/10 focus:border-cyan-400 outline-none max-md:p-3"
                         />
 
                         <input
@@ -165,7 +165,7 @@ function Contact() {
                             name="from_email"
                             required
                             placeholder="Your Email"
-                            className="w-full p-4 rounded-2xl bg-white/5 border border-white/10 focus:border-cyan-400 outline-none max-md:p-3"
+                            className="w-full min-h-12 p-4 rounded-2xl bg-white/5 border border-white/10 focus:border-cyan-400 outline-none max-md:p-3"
                         />
 
                         <textarea

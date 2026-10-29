@@ -89,7 +89,7 @@ function Skills() {
     >
       {/* Heading */}
 
-      <div className="text-center mb-10">
+      <div className="text-center mb-10 max-md:mb-8">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +106,7 @@ function Skills() {
 
       {/* Skill Cards */}
 
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-md:gap-4">
 
         {skillCategories.map((category, index) => (
           <motion.div
@@ -147,6 +147,7 @@ function Skills() {
                     gap-2
                     px-3
                     py-2
+                    max-md:min-h-9
                     rounded-full
                     bg-cyan-500/10
                     border
@@ -171,7 +172,7 @@ function Skills() {
 
       {/* Currently Learning */}
 
-      <div className="max-w-6xl mx-auto mt-8">
+      <div className="max-w-6xl mx-auto mt-8 max-md:mt-5">
 
         <div
           className="
@@ -201,6 +202,8 @@ function Skills() {
                 className="
                   px-4
                   py-2
+                  max-md:px-3
+                  max-md:py-1.5
                   rounded-full
                   bg-cyan-500/10
                   border

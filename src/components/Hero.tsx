@@ -98,7 +98,7 @@ function Hero() {
               href="https://drive.google.com/file/d/1zp3lmgaqtjXMfJfKMcAQzthPlhtaijbr/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-cyan-600 transition px-7 py-3 rounded-xl flex items-center gap-2 font-medium max-md:min-h-11 max-md:px-5"
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-cyan-600 transition px-7 py-3 rounded-xl flex items-center gap-2 font-medium max-md:min-h-12 max-md:w-full max-md:justify-center max-md:px-5"
             >
               <FaDownload />
               Resume
@@ -106,7 +106,7 @@ function Hero() {
 
             <a
               href="#projects"
-              className="border border-cyan-400 hover:bg-cyan-400 hover:text-black transition px-7 py-3 rounded-xl font-medium max-md:min-h-11 max-md:px-5"
+              className="border border-cyan-400 hover:bg-cyan-400 hover:text-black transition px-7 py-3 rounded-xl font-medium max-md:min-h-12 max-md:w-full max-md:px-5"
             >
               View Projects
             </a>
@@ -120,6 +120,8 @@ function Hero() {
               href="https://github.com/Akshay001-A"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              className="max-md:flex max-md:h-11 max-md:w-11 max-md:items-center max-md:justify-center max-md:rounded-full max-md:border max-md:border-white/10"
             >
               <FaGithub className="hover:text-cyan-400 transition" />
             </a>
@@ -128,6 +130,8 @@ function Hero() {
               href="https://www.linkedin.com/in/akshayofficial0207"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              className="max-md:flex max-md:h-11 max-md:w-11 max-md:items-center max-md:justify-center max-md:rounded-full max-md:border max-md:border-white/10"
             >
               <FaLinkedin className="hover:text-cyan-400 transition" />
             </a>
@@ -139,7 +143,7 @@ function Hero() {
           {/* Stats */}
           <div className="flex gap-12 mt-10 max-md:grid max-md:grid-cols-3 max-md:gap-3 max-md:mt-8">
 
-            <div>
+            <div className="max-md:rounded-xl max-md:border max-md:border-white/10 max-md:bg-white/5 max-md:px-1 max-md:py-3">
               <h3 className="text-3xl font-bold text-cyan-400 max-md:text-2xl">
                 8.83
               </h3>
@@ -148,7 +152,7 @@ function Hero() {
               </p>
             </div>
 
-            <div>
+            <div className="max-md:rounded-xl max-md:border max-md:border-white/10 max-md:bg-white/5 max-md:px-1 max-md:py-3">
               <h3 className="text-3xl font-bold text-cyan-400 max-md:text-2xl">
                 4+
               </h3>
@@ -157,7 +161,7 @@ function Hero() {
               </p>
             </div>
 
-            <div>
+            <div className="max-md:rounded-xl max-md:border max-md:border-white/10 max-md:bg-white/5 max-md:px-1 max-md:py-3">
               <h3 className="text-3xl font-bold text-cyan-400 max-md:text-2xl">
                 2027
               </h3>

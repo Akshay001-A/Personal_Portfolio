@@ -90,7 +90,7 @@ function Projects() {
         >
             {/* Heading */}
 
-            <div className="text-center mb-10">
+            <div className="text-center mb-10 max-md:mb-8">
                 <h2 className="text-5xl font-bold mb-4 max-md:text-3xl max-md:mb-3">
                     Projects
                 </h2>
@@ -104,7 +104,7 @@ function Projects() {
 
             {/* Projects Grid */}
 
-            <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:gap-5">
 
                 {projects.map((project, index) => (
                     <motion.div
@@ -122,6 +122,7 @@ function Projects() {
               border
               border-white/10
               rounded-3xl
+              max-md:rounded-2xl
               overflow-hidden
               backdrop-blur-md
               hover:border-cyan-400
@@ -175,7 +176,7 @@ function Projects() {
                                 {project.title}
                             </h3>
 
-                            <p className="text-gray-300 leading-7 mb-5 max-md:text-sm max-md:leading-6">
+                            <p className="text-gray-300 leading-7 mb-5 max-md:line-clamp-4 max-md:text-sm max-md:leading-6">
                                 {project.description}
                             </p>
 
@@ -219,6 +220,8 @@ function Projects() {
                     text-slate-950
                     font-semibold
                     py-3
+                    max-md:min-h-12
+                    max-md:py-3.5
                     rounded-xl
                     transition-all
                     duration-300
