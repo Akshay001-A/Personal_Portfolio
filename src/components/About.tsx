@@ -8,7 +8,7 @@ function About() {
     <>
       <section
         id="about"
-        className="min-h-screen flex items-center justify-center px-6 md:px-12 py-20"
+        className="min-h-screen flex items-center justify-center px-6 md:px-12 py-20 max-md:min-h-0 max-md:px-4 max-md:py-16"
       >
         <div className="max-w-5xl mx-auto">
 
@@ -16,12 +16,12 @@ function About() {
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl font-bold text-center mb-12"
+            className="text-5xl font-bold text-center mb-12 max-md:text-3xl max-md:mb-7"
           >
             About Me
           </motion.h2>
 
-          <p className="text-xl text-gray-300 leading-10 text-center">
+          <p className="text-xl text-gray-300 leading-10 text-center max-md:text-base max-md:leading-7">
             I am an Information Science & Engineering student at
             <span className="text-cyan-400">
               {" "}M.S. Ramaiah Institute of Technology
@@ -31,16 +31,16 @@ function About() {
             and Computer Vision.
           </p>
 
-          <p className="text-xl text-gray-300 leading-10 text-center mt-6">
+          <p className="text-xl text-gray-300 leading-10 text-center mt-6 max-md:text-base max-md:leading-7 max-md:mt-4">
             I enjoy building innovative software solutions that solve
             real-world problems and create meaningful impact through
             technology and intelligent systems.
           </p>
 
-          <div className="flex justify-center gap-12 mt-12">
+          <div className="flex justify-center gap-12 mt-12 max-md:grid max-md:grid-cols-3 max-md:gap-3 max-md:mt-8">
 
             <div className="text-center">
-              <h3 className="text-cyan-400 text-3xl font-bold">
+              <h3 className="text-cyan-400 text-3xl font-bold max-md:text-2xl">
                 8.83
               </h3>
               <p className="text-gray-400">
@@ -49,7 +49,7 @@ function About() {
             </div>
 
             <div className="text-center">
-              <h3 className="text-cyan-400 text-3xl font-bold">
+              <h3 className="text-cyan-400 text-3xl font-bold max-md:text-2xl">
                 4+
               </h3>
               <p className="text-gray-400">
@@ -58,7 +58,7 @@ function About() {
             </div>
 
             <div className="text-center">
-              <h3 className="text-cyan-400 text-3xl font-bold">
+              <h3 className="text-cyan-400 text-3xl font-bold max-md:text-xl">
                 Bangalore
               </h3>
               <p className="text-gray-400">
@@ -105,6 +105,7 @@ function About() {
             justify-center
             z-[100]
             p-6
+            max-md:p-4
           "
         >
           <div
@@ -121,7 +122,7 @@ function About() {
             "
           >
             <div className="flex justify-between items-center mb-8">
-              <h2 className="text-4xl font-bold text-cyan-400">
+              <h2 className="text-4xl font-bold text-cyan-400 max-md:text-2xl">
                 About Me
               </h2>
 
@@ -137,7 +138,7 @@ function About() {
               </button>
             </div>
 
-            <div className="space-y-6 text-gray-300 leading-9">
+            <div className="space-y-6 text-gray-300 leading-9 max-md:space-y-4 max-md:text-sm max-md:leading-7">
 
               <p>
                 I am currently pursuing Information Science &

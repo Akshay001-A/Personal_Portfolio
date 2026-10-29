@@ -31,11 +31,11 @@ function Education() {
   return (
     <section
       id="education"
-      className="min-h-screen px-6 pt-16 pb-12"
+      className="min-h-screen px-6 pt-16 pb-12 max-md:min-h-0 max-md:px-4 max-md:py-16"
     >
       {/* Heading */}
       <div className="text-center mb-10">
-        <h2 className="text-5xl font-bold">
+        <h2 className="text-5xl font-bold max-md:text-3xl">
           Education
         </h2>
 
@@ -64,6 +64,7 @@ function Education() {
               border-white/10
               rounded-3xl
               p-6
+              max-md:p-4
               backdrop-blur-md
               hover:border-cyan-400
               hover:shadow-[0_0_25px_rgba(34,211,238,0.15)]
@@ -113,11 +114,11 @@ function Education() {
                   </span>
                 </div>
 
-                <h3 className="text-2xl font-bold mt-2">
+                <h3 className="text-2xl font-bold mt-2 max-md:text-xl max-md:leading-7">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-300 text-lg mt-1">
+                <p className="text-gray-300 text-lg mt-1 max-md:text-base">
                   {item.institute}
                 </p>
 

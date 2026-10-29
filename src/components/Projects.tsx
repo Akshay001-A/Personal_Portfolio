@@ -86,16 +86,16 @@ function Projects() {
     return (
         <section
             id="projects"
-            className="min-h-screen px-6 pt-1 pb-16 scroll-mt-16"
+            className="min-h-screen px-6 pt-1 pb-16 scroll-mt-16 max-md:min-h-0 max-md:px-4 max-md:pt-12"
         >
             {/* Heading */}
 
             <div className="text-center mb-10">
-                <h2 className="text-5xl font-bold mb-4">
+                <h2 className="text-5xl font-bold mb-4 max-md:text-3xl max-md:mb-3">
                     Projects
                 </h2>
 
-                <p className="text-gray-400 max-w-3xl mx-auto text-lg">
+                <p className="text-gray-400 max-w-3xl mx-auto text-lg max-md:text-base max-md:leading-7">
                     A collection of AI, Machine Learning, Full Stack Development,
                     and Software Engineering projects focused on solving
                     real-world problems and delivering impactful user experiences.
@@ -135,7 +135,7 @@ function Projects() {
                     >
                         {/* Image */}
 
-                        <div className="relative h-56 overflow-hidden">
+                        <div className="relative h-56 overflow-hidden max-md:h-48">
 
                             <img
                                 src={project.image}
@@ -165,17 +165,17 @@ function Projects() {
 
                         {/* Content */}
 
-                        <div className="p-6 flex flex-col flex-1">
+                        <div className="p-6 flex flex-col flex-1 max-md:p-4">
 
                             <p className="text-cyan-400 text-sm mb-3">
                                 {project.category}
                             </p>
 
-                            <h3 className="text-2xl font-bold mb-4">
+                            <h3 className="text-2xl font-bold mb-4 max-md:text-xl max-md:mb-3">
                                 {project.title}
                             </h3>
 
-                            <p className="text-gray-300 leading-7 mb-5">
+                            <p className="text-gray-300 leading-7 mb-5 max-md:text-sm max-md:leading-6">
                                 {project.description}
                             </p>
 
@@ -193,6 +193,7 @@ function Projects() {
                       text-cyan-400
                       rounded-full
                       text-sm
+                      max-md:text-xs
                     "
                                     >
                                         {item}

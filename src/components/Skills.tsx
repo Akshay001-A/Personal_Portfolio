@@ -85,7 +85,7 @@ function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-screen px-6 py-16"
+      className="min-h-screen px-6 py-16 max-md:min-h-0 max-md:px-4 max-md:py-16"
     >
       {/* Heading */}
 
@@ -94,7 +94,7 @@ function Skills() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-5xl font-bold mb-3"
+          className="text-5xl font-bold mb-3 max-md:text-3xl"
         >
           Skills
         </motion.h2>
@@ -125,17 +125,18 @@ function Skills() {
               border-white/10
               rounded-3xl
               p-6
+              max-md:p-4
               backdrop-blur-md
               hover:border-cyan-400
               hover:shadow-[0_0_25px_rgba(34,211,238,0.15)]
               transition-all
             "
           >
-            <h3 className="text-xl font-bold text-cyan-400 mb-5">
+            <h3 className="text-xl font-bold text-cyan-400 mb-5 max-md:text-lg max-md:mb-4">
               {category.title}
             </h3>
 
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 max-md:gap-2">
 
               {category.skills.map((skill, idx) => (
                 <span
@@ -152,6 +153,7 @@ function Skills() {
                     border-cyan-500/20
                     text-cyan-300
                     text-sm
+                    max-md:text-xs
                     hover:bg-cyan-500/20
                     transition
                   "
@@ -178,14 +180,15 @@ function Skills() {
           border-cyan-400/20
           rounded-3xl
           p-6
+          max-md:p-4
           text-center
         "
         >
-          <h3 className="text-2xl font-bold text-cyan-400 mb-4">
+          <h3 className="text-2xl font-bold text-cyan-400 mb-4 max-md:text-xl">
             Currently Learning
           </h3>
 
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-wrap justify-center gap-4 max-md:gap-2">
 
             {[
               "Next.js",
