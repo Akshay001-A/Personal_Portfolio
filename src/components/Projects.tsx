@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { FaGithub } from "react-icons/fa";
 
 import deepfakeImg from "../assets/deepfake.png";
 import potatoImg from "../assets/potato.png";
@@ -227,7 +228,10 @@ function Projects() {
                     duration-300
                   "
                                 >
-                                    Read More →
+                                    <span className="inline-flex items-center justify-center gap-2">
+                                        <FaGithub aria-hidden="true" className="text-lg" />
+                                        View Source Code
+                                    </span>
                                 </a>
 
                             </div>
