@@ -112,7 +112,7 @@ function About() {
         >
           <div
             className="
-              bg-slate-900
+              bg-[#171d26]
               border
               border-cyan-500/20
               rounded-3xl

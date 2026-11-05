@@ -15,9 +15,9 @@ function Hero() {
       className="min-h-screen flex items-center px-6 md:px-12 relative overflow-hidden max-md:min-h-0 max-md:px-4 max-md:py-28"
     >
       {/* Background Glow */}
-      <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500/20 blur-[120px] rounded-full max-md:left-0 max-md:w-52 max-md:h-52"></div>
+      <div className="absolute top-20 left-20 w-72 h-72 bg-cyan-500/10 blur-[140px] rounded-full max-md:left-0 max-md:w-52 max-md:h-52"></div>
 
-      <div className="absolute bottom-20 right-20 w-72 h-72 bg-blue-500/20 blur-[120px] rounded-full max-md:right-0 max-md:w-52 max-md:h-52"></div>
+      <div className="absolute bottom-20 right-20 w-72 h-72 bg-slate-500/15 blur-[140px] rounded-full max-md:right-0 max-md:w-52 max-md:h-52"></div>
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-[35%_65%] gap-6 items-center max-md:w-full max-md:gap-10">
 
@@ -42,7 +42,7 @@ function Hero() {
               rounded-full
               border-4
               border-cyan-400
-              shadow-[0_0_80px_rgba(34,211,238,0.45)]
+              shadow-[0_16px_50px_rgba(0,0,0,0.38)]
             "
           />
         </motion.div>

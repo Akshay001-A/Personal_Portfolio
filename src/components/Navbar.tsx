@@ -15,7 +15,7 @@ function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-slate-900/80 backdrop-blur-md border-b border-white/10 z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[#121820]/90 backdrop-blur-md border-b border-white/10 z-50">
       <div className="max-w-7xl mx-auto px-8 py-3 flex justify-between items-center max-md:px-4 max-md:py-3">
 
         {/* Logo */}
@@ -78,7 +78,7 @@ function Navbar() {
 
       <div
         id="mobile-navigation"
-        className={`hidden max-md:block overflow-hidden border-t border-white/10 bg-slate-900/95 transition-all duration-300 ${
+        className={`hidden max-md:block overflow-hidden border-t border-white/10 bg-[#121820]/95 transition-all duration-300 ${
           menuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         }`}
         aria-hidden={!menuOpen}
