@@ -4,7 +4,7 @@ import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import deepfakeImg from "../assets/deepfake.png";
 import potatoImg from "../assets/potato.png";
 import shoemartImg from "../assets/shoemart.png";
-import gymImg from "../assets/gym.png";
+import gymImg from "../assets/gym-dashboard.png";
 import flashlearnImg from "../assets/flashlearn.png";
 import echobrainImg from "../assets/dashboard.png";
 
@@ -12,6 +12,7 @@ function Projects() {
     const projects = [
         {
             image: deepfakeImg,
+            order: 3,
             category: "Artificial Intelligence",
             title: "Deepfake Audio Detection",
             description:
@@ -23,6 +24,7 @@ function Projects() {
 
         {
             image: potatoImg,
+            order: 4,
             category: "Deep Learning",
             title: "Potato Plant Disease Recognition",
             description:
@@ -34,6 +36,7 @@ function Projects() {
 
         {
             image: shoemartImg,
+            order: 1,
             category: "Full Stack Development",
             title: "Shoe Mart E-Commerce Platform",
             description:
@@ -46,6 +49,7 @@ function Projects() {
 
         {
                     image: echobrainImg,
+                    order: 5,
                     category: "AI Developer Tool",
                     title: "EchoBrain X",
                     description:
@@ -64,6 +68,7 @@ function Projects() {
 
         {
             image: gymImg,
+            order: 2,
             category: "Java Application",
             title: "Gym Management System",
             description:
@@ -75,6 +80,7 @@ function Projects() {
 
         {
             image: flashlearnImg,
+            order: 6,
             category: "Educational Platform",
             title: "Flash Learn",
             description:
@@ -108,7 +114,7 @@ function Projects() {
 
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:gap-5">
 
-                {projects.map((project, index) => (
+                {[...projects].sort((a, b) => a.order - b.order).map((project, index) => (
                     <motion.div
                         key={index}
                         initial={{ opacity: 0, y: 40 }}
