@@ -15,7 +15,7 @@ function Projects() {
             category: "Artificial Intelligence",
             title: "Deepfake Audio Detection",
             description:
-                "Next-generation AI-powered audio forensics platform built with Python, Flask, Scikit-Learn, and Librosa, enabling real-time deepfake speech detection, confidence-based classification, and advanced audio authenticity verification.",
+                "Built a Flask application that analyzes uploaded audio to identify potential deepfake speech. Used Librosa for audio feature extraction and Scikit-Learn for authenticity classification.",
             github:
                 "https://github.com/Akshay001-A/Deepfake-Audio-Detection",
             tech: ["Python", "Flask", "Scikit-Learn", "Librosa"],
@@ -26,7 +26,7 @@ function Projects() {
             category: "Deep Learning",
             title: "Potato Plant Disease Recognition",
             description:
-                "AI-powered agricultural platform built with TensorFlow, Flask, MongoDB, and EfficientNetV2, enabling real-time plant disease detection, intelligent crop diagnostics, treatment recommendations, and agricultural health monitoring.",
+                "Developed a web application that classifies potato leaf images to support plant disease identification. Built with TensorFlow, EfficientNetV2, Flask, and MongoDB.",
             github:
                 "https://github.com/Akshay001-A/potato-plant-disease-recognition",
             tech: ["TensorFlow", "Flask", "MongoDB",]
@@ -37,7 +37,7 @@ function Projects() {
             category: "Full Stack Development",
             title: "Shoe Mart E-Commerce Platform",
             description:
-                "Next-generation AI-driven footwear marketplace built with React, Node.js, MongoDB, Gemini AI, and OpenCLIP, enabling conversational shopping, outfit-based recommendations, and real-time visual product discovery.",
+                "Created a full stack footwear marketplace with React, Node.js, and MongoDB. Integrated Gemini AI and OpenCLIP to support conversational shopping and visual product discovery.",
             github:
                 "https://github.com/Akshay001-A/Shoe-Mart-E-commerce-Web-Application",
             tech: ["React", "Node.js", "MongoDB", "Gemini AI"],
@@ -48,7 +48,7 @@ function Projects() {
                     category: "AI Developer Tool",
                     title: "EchoBrain X",
                     description:
-                        "AI-powered repository intelligence platform built with Next.js, Node.js, Express, MongoDB, and Gemini AI, enabling developers to upload repositories, generate project summaries, perform semantic code search, analyze architecture, browse source code, and chat with their codebase using natural language.",
+                        "Built a repository intelligence tool for exploring codebases through summaries, semantic search, architecture analysis, and natural-language questions. Developed with Next.js, Express, MongoDB, and Gemini AI.",
                     github:
                         "https://github.com/Akshay001-A/EchoBrain",
                     tech: [
@@ -66,7 +66,7 @@ function Projects() {
             category: "Java Application",
             title: "Gym Management System",
             description:
-                "Professional gym management application built with Java Swing, MySQL, and JDBC, enabling member management, payment processing, workout scheduling, notifications, and efficient administrative control.",
+                "Developed a Java Swing desktop application for managing gym members, payments, workout schedules, and administrative records. Used MySQL and JDBC for data storage and access.",
             github:
                 "https://github.com/Akshay001-A/Gym-Management-System",
             tech: ["Java", "Swing", "MySQL", "JDBC"],
@@ -77,7 +77,7 @@ function Projects() {
             category: "Educational Platform",
             title: "Flash Learn",
             description:
-                "Modern interactive learning platform built with HTML, CSS, JavaScript, and jQuery, enabling flashcard-based learning, quiz assessments, progress tracking, daily streaks, and personalized study experiences.",
+                "Created an interactive study platform with flashcards, quizzes, progress tracking, and daily streaks. Built the interface with HTML, CSS, JavaScript, and jQuery.",
             github:
                 "https://github.com/Akshay001-A/FLASH_LEARN",
             tech: ["HTML", "CSS", "JavaScript", "jQuery"],
