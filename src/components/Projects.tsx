@@ -69,13 +69,13 @@ function Projects() {
         {
             image: gymImg,
             order: 2,
-            category: "Java Application",
+            category: "Full Stack Development",
             title: "Gym Management System",
             description:
-                "Developed a Java Swing desktop application for managing gym members, payments, workout schedules, and administrative records. Used MySQL and JDBC for data storage and access.",
+                "A full stack gym management system built with React, Spring Boot microservices, and PostgreSQL. Includes member and admin dashboards, memberships, payments, QR-based attendance, and Kafka-powered membership activation.",
             github:
                 "https://github.com/Akshay001-A/Gym-Management-System",
-            tech: ["Java", "Swing", "MySQL", "JDBC"],
+            tech: ["React", "Spring Boot", "PostgreSQL", "Kafka"],
         },
 
         {
