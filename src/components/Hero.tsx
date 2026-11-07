@@ -154,7 +154,7 @@ function Hero() {
 
             <div className="max-md:rounded-xl max-md:border max-md:border-white/10 max-md:bg-white/5 max-md:px-1 max-md:py-3">
               <h3 className="text-3xl font-bold text-cyan-400 max-md:text-2xl">
-                4+
+                6
               </h3>
               <p className="text-gray-400">
                 Projects

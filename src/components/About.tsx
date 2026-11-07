@@ -50,7 +50,7 @@ function About() {
 
             <div className="text-center">
               <h3 className="text-cyan-400 text-3xl font-bold max-md:text-2xl">
-                4+
+                6
               </h3>
               <p className="text-gray-400">
                 Projects
