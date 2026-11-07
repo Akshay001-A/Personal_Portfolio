@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 import deepfakeImg from "../assets/deepfake.png";
 import potatoImg from "../assets/potato.png";
@@ -40,6 +40,7 @@ function Projects() {
                 "Created a full stack footwear marketplace with React, Node.js, and MongoDB. Integrated Gemini AI and OpenCLIP to support conversational shopping and visual product discovery.",
             github:
                 "https://github.com/Akshay001-A/Shoe-Mart-E-commerce-Web-Application",
+            liveDemo: "https://shoemart-frontend.onrender.com/",
             tech: ["React", "Node.js", "MongoDB", "Gemini AI"],
         },
 
@@ -206,7 +207,7 @@ function Projects() {
 
                             {/* Button */}
 
-                            <div className="mt-auto">
+                            <div className={`mt-auto grid gap-3 ${project.liveDemo ? "sm:grid-cols-2" : "grid-cols-1"}`}>
 
                                 <a
                                     href={project.github}
@@ -233,6 +234,18 @@ function Projects() {
                                         View Source Code
                                     </span>
                                 </a>
+
+                                {project.liveDemo && (
+                                    <a
+                                        href={project.liveDemo}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-cyan-400 bg-transparent px-4 py-3 text-center font-semibold text-cyan-300 transition-all duration-300 hover:bg-cyan-400 hover:text-slate-950"
+                                    >
+                                        <FaExternalLinkAlt aria-hidden="true" />
+                                        Live Demo
+                                    </a>
+                                )}
 
                             </div>
 
